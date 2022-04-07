@@ -64,3 +64,77 @@ ul {
 
 /* Start Component */
 /* End Component */
+
+/* Start Header */
+
+header {
+    padding: 30px 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+header .container .logo img {
+    width: 25px;
+    margin-right: 5px;
+}
+
+header .container .logo span {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+@media (max-width: 991px) {
+    header .container nav {
+        display: none;
+    }
+}
+
+header .container nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header .container nav ul li a {
+    padding: 20px;
+    text-transform: uppercase;
+    color: #232323;
+}
+
+header .container nav ul li i {
+    font-size: 20px;
+    color: #232323;
+}
+
+header .container .menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    header .container .menu {
+        display: flex;
+    }
+}
+
+header .container .menu span {
+    display: block;
+    height: 2px;
+    width: 30px;
+    background-color: white;
+    margin-bottom: 6px;
+}
+
+/* End Header */
