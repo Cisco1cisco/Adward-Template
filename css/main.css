@@ -368,3 +368,74 @@ header .container .menu span {
 }
 
 /* End Teachers */
+
+/* Start Vehicles */
+
+.vehicles {
+    padding-top: 75px;
+    padding-bottom: 125px;
+}
+
+.vehicles .container .content {
+    position: relative;
+}
+
+.vehicles .container .content .image {
+    text-align: center;
+}
+
+.vehicles .container .content .image img {
+    max-width: 100%;
+}
+
+@media (max-width: 991px) {
+    .vehicles .container .content .image img {
+        width: 400px;
+    }
+}
+
+.vehicles .container .content .arrow {
+    position: absolute;
+    background-color: var(--main-color, #082465);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+}
+
+@media (max-width: 576px) {
+    .vehicles .container .content .arrow {
+        top: calc(100% + 20px);
+    }
+}
+
+.vehicles .container .content .arrow.right {
+    right: 0;
+}
+
+@media (max-width: 576px) {
+    .vehicles .container .content .arrow.right {
+        right: 20%;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .vehicles .container .content .arrow.left {
+        left: 20%;
+    }
+}
+
+.vehicles .container .content .arrow i {
+    color: white;
+}
+
+/* End Vehicles */
