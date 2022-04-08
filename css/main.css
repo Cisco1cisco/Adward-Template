@@ -4,6 +4,7 @@
     --main-color: #082465;
     --sec-color: #48494a;
     --butt-color: #fec913;
+    --trans-dur: 0.3s;
 }
 
 /* End Variables */
@@ -22,6 +23,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-image: url(../photos/body-bg.jpg);
 }
 
 a {
@@ -68,7 +70,10 @@ ul {
 /* Start Header */
 
 header {
-    padding: 30px 20px;
+    padding: 25px 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
 }
 
 header .container {
@@ -105,6 +110,7 @@ header .container nav ul {
 }
 
 header .container nav ul li a {
+    display: block;
     padding: 20px;
     text-transform: uppercase;
     color: #232323;
@@ -113,6 +119,7 @@ header .container nav ul li a {
 header .container nav ul li i {
     font-size: 20px;
     color: #232323;
+    cursor: pointer;
 }
 
 header .container .menu {
@@ -138,3 +145,136 @@ header .container .menu span {
 }
 
 /* End Header */
+
+/* Start Landing */
+
+.landing {
+    position: relative;
+    height: 95vh;
+    overflow: hidden;
+}
+
+@media (max-width: 991px) {
+    .landing {
+        height: fit-content;
+    }
+}
+
+.landing::before {
+    content: "";
+    position: absolute;
+    width: 48%;
+    height: 100%;
+    background: url(../photos/landing.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    background-position: right bottom;
+}
+
+@media (max-width: 991px) {
+    .landing::before {
+        width: 200%;
+    }
+}
+
+.landing .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    color: white;
+    height: 100%;
+}
+
+@media (max-width: 991px) {
+    .landing .container {
+        flex-direction: column;
+        padding-top: 100px;
+        align-items: flex-start;
+    }
+}
+
+.landing .container .text {
+    width: 45%;
+}
+
+@media (max-width: 991px) {
+    .landing .container .text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .landing .container .text {
+        text-align: center;
+    }
+}
+
+.landing .container .text h3 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.landing .container .text h1 {
+    font-size: 50px;
+    color: var(--butt-color, #fec913);
+    margin: 20px 0;
+}
+
+.landing .container .text p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.landing .container .text a {
+    display: block;
+    background-color: var(--butt-color, #fec913);
+    width: fit-content;
+    padding: 15px 60px 15px 30px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+}
+
+@media (max-width: 768px) {
+    .landing .container .text a {
+        margin: 0 auto;
+    }
+}
+
+.landing .container .text a:hover {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+
+.landing .container .text a::after {
+    content: "\f30b";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    position: absolute;
+    top: 13px;
+    right: 20px;
+}
+
+.landing .container .image img {
+    max-width: 100%;
+}
+
+/* End Landing */
