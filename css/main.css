@@ -612,3 +612,94 @@ header .container .menu span {
 }
 
 /* End Contact */
+
+/* Start Map */
+
+.map {
+    position: relative;
+}
+
+.map iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.map .content {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: var(--main-color, #082465);
+    overflow: hidden;
+    width: 70%;
+}
+
+@media (max-width: 991px) {
+    .map .content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .map .content {
+        flex-direction: column;
+    }
+}
+
+.map .content img {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .map .content img {
+        width: 100%;
+    }
+}
+
+.map .content .text {
+    color: white;
+    padding: 20px 30px;
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+    .map .content .text {
+        width: 100%;
+    }
+}
+
+.map .content .text h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.map .content .text p {
+    line-height: 1.7;
+}
+
+.map .content .text a {
+    display: block;
+    background-color: var(--butt-color, #fec913);
+    text-transform: capitalize;
+    width: fit-content;
+    margin-top: 15px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: white;
+}
+
+/* End Map */
