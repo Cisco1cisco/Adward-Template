@@ -729,3 +729,14 @@ header .container .menu span {
 }
 
 /* End End Section */
+
+/* Start Footer */
+
+footer {
+    background-color: var(--main-color, #082465);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* End Footer */
