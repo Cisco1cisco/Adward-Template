@@ -703,3 +703,29 @@ header .container .menu span {
 }
 
 /* End Map */
+
+/* Start End Section */
+
+.end-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.end-section .container h2:first-of-type {
+    font-size: 32px;
+    color: var(--main-color, #082465);
+    margin-bottom: 15px;
+}
+
+.end-section .container h2:last-of-type {
+    color: var(--butt-color, #fec913);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.end-section .container p {
+    line-height: 1.7;
+    color: var(--sec-color, #48494a);
+}
+
+/* End End Section */
