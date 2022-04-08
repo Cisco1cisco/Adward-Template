@@ -439,3 +439,87 @@ header .container .menu span {
 }
 
 /* End Vehicles */
+
+/* Start Feedback */
+
+.feedback {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    position: relative;
+    background-image: url(../photos/shape-1.png);
+    background-size: 15%;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 576px) {
+    .feedback {
+        background: none;
+    }
+}
+
+.feedback .container .feed-cont {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #fefeff;
+    box-shadow: 0px 0px 5px 0px rgb(163 158 163);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 35px;
+}
+
+@media (max-width: 576px) {
+    .feedback .container .feed-cont {
+        width: 100%;
+    }
+}
+
+.feedback .container .feed-cont .head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+    .feedback .container .feed-cont .head {
+        flex-direction: column;
+    }
+}
+
+.feedback .container .feed-cont .head img {
+    margin-right: 20px;
+    width: 100px;
+}
+
+@media (max-width: 576px) {
+    .feedback .container .feed-cont .head img {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .feedback .container .feed-cont .head .text {
+        text-align: center;
+    }
+}
+
+.feedback .container .feed-cont .head .text h4 {
+    font-size: 24px;
+    color: var(--main-color, #082465);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.feedback .container .feed-cont .head .text span {
+    color: var(--sec-color, #48494a);
+}
+
+.feedback .container .feed-cont p {
+    color: var(--sec-color, #48494a);
+    line-height: 1.7;
+}
+
+/* End Feedback */
