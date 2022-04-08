@@ -65,6 +65,68 @@ ul {
 /* End Global Rules */
 
 /* Start Component */
+
+a.button {
+    display: block;
+    background-color: var(--butt-color, #fec913);
+    width: fit-content;
+    padding: 15px 60px 15px 30px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+}
+
+@media (max-width: 768px) {
+    a.button {
+        margin: 0 auto;
+    }
+}
+
+a.button:hover {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    box-shadow: 0px 5px 10px -5px rgb(0 0 0 / 70%);
+}
+
+a.button::after {
+    content: "\f30b";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    position: absolute;
+    top: 13px;
+    right: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title h2 {
+    font-size: 32px;
+    color: var(--main-color, #082465);
+    margin-bottom: 5px;
+}
+
+.title p {
+    color: var(--sec-color, #48494a);
+    line-height: 1.7;
+}
+
 /* End Component */
 
 /* Start Header */
@@ -229,52 +291,30 @@ header .container .menu span {
     margin-bottom: 20px;
 }
 
-.landing .container .text a {
-    display: block;
-    background-color: var(--butt-color, #fec913);
-    width: fit-content;
-    padding: 15px 60px 15px 30px;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    position: relative;
-    transition: var(--trans-dur, 0.3s);
-    -webkit-transition: var(--trans-dur, 0.3s);
-    -moz-transition: var(--trans-dur, 0.3s);
-    -ms-transition: var(--trans-dur, 0.3s);
-    -o-transition: var(--trans-dur, 0.3s);
-}
-
-@media (max-width: 768px) {
-    .landing .container .text a {
-        margin: 0 auto;
-    }
-}
-
-.landing .container .text a:hover {
-    transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
-}
-
-.landing .container .text a::after {
-    content: "\f30b";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 20px;
-    position: absolute;
-    top: 13px;
-    right: 20px;
-}
 
 .landing .container .image img {
     max-width: 100%;
 }
 
 /* End Landing */
+
+/* Start About */
+
+.about {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.about .container .image {
+    text-align: center;
+}
+
+.about .container .image img {
+    max-width: 100%;
+}
+
+.about .container a {
+    margin: 20px auto;
+}
+
+/* End About */
