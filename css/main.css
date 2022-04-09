@@ -630,6 +630,7 @@ header .container .menu span {
 .contact .container .form form textarea {
     height: 100px;
     padding-top: 40px;
+    resize: none;
 }
 
 .contact .container .form form button {
